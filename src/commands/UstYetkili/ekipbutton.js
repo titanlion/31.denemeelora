@@ -9,11 +9,11 @@ module.exports = {
     },
  run: async (client, message, args, durum, kanal) => {
   
-let botcomamnds = "855159731176865812"
-let tag = "†" 
-  let ekiprol = ["855159733048311818","","","","","","","",""]
-  let ekipetikettag = ["1983","","","","","","",""]
-  let ekipisimtag = ["Shéw","","","","","","","",""]
+let botcomamnds = "931945532019073025"
+let tag = "✸" 
+  let ekiprol = ["954106152944291940","957286636662698004","931923038906245122","961680221025755166","957261939485077534","931961640621060178","","",""]
+  let ekipetikettag = ["1983","1","2","3","4","5","6","7"]
+  let ekipisimtag = ["Shéw","deneme","deneme1","deneme2","deneme3","deneme4","deneme5","deneme6","deneme7"]
 
   let rdagıt = new disbut.MessageButton().setStyle('green').setLabel(`Rol Dağıt`).setID('rdagıt')
   let sesteolmayanlar = new disbut.MessageButton().setStyle('green').setLabel(`Seste olmayanlar`).setID('sesteolmayanlar')

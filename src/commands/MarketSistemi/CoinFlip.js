@@ -14,7 +14,7 @@ run: async (client, message, args, embed, prefix) => {
 
   if (!message.guild) return;
 
-		let kanallar = ["coin-komut"]
+		let kanallar = ["bot-commands"]
 	if (!kanallar.includes(message.channel.name)) return message.lineReply(`${kanallar.map(x => `${client.channels.cache.find(chan => chan.name == x)}`)} kanallarında kullanabilirsiniz.`).then(x => x.delete({timeout: 10000}));
 	
 	  let data = limit.get(message.author.id) || {dailyCoinTime: 0};
@@ -33,6 +33,7 @@ run: async (client, message, args, embed, prefix) => {
        let sec = args[0];
         if(!sec || !Number(args[0])) return message.lineReply(`Kaç dolar ile oynamak istiyorsun?`)
         if(sec >= 50000) return message.lineReply("50.000 dolardan fazla bir dolar ile oyun oynamayazsın")
+        
 
     let data = await ozi.findOne({guildID: message.guild.id, userID: message.author.id}, async(err, res) => {
     if(!res.dolar) return message.lineReply(`Hiç doların yok!`) 

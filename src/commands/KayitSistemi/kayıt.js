@@ -133,9 +133,9 @@ ${uye.toString()} sunucumuza <@${message.author.id}> tarafından, \`${setName}\`
 
 msg.edit({components: null, embed: ozie}); 
 
-    await uye.roles.add(ayar.erkekRolleri)
-    await uye.roles.remove(ayar.kizRolleri)
-    await uye.roles.remove(ayar.unregRoles)
+    await uye.roles.add(conf.erkekRolleri)
+    await uye.roles.remove(conf.kizRolleri)
+    await uye.roles.remove(conf.unregRoles)
     await coin.findOneAndUpdate({ guildID: uye.guild.id, userID: message.author.id }, { $inc: { coin: settings.toplamsCoin } }, { upsert: true });
     await toplams.findOneAndUpdate({ guildID: message.guild.id, userID: message.author.id }, { $push: { toplams: uye.user.id } }, { upsert: true });
     await regstats.findOneAndUpdate({ guildID: message.guild.id, userID: message.author.id }, { $inc: { top: 1, topGuild24: 1, topGuild7: 1, top24: 1, top7: 1, top14: 1, erkek: 1, erkek24: 1, erkek7: 1, erkek14: 1, }, }, { upsert: true });

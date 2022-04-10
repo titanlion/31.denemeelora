@@ -3,7 +3,7 @@ const conf = require("../../configs/sunucuayar.json");
 
 module.exports = {
   conf: {
-    aliases: ['reload', 'reboot', 'restart'],
+    aliases: ['reload', 'reboot', 'restart','yenidenbaşlat'],
     name: "reload",
     owner: true,
   },

@@ -21,7 +21,7 @@ let member = message.guild.member(message.mentions.members.first() || message.gu
     message.lineReply(`Yetkin bulunmamakta dostum. `).then(x=> x.delete({timeout: 5000})) 
     return }
  
-       let ekipRolu = "855159733048311818"
+       let ekipRolu = "954106152944291940"
  
     let taglilar = message.guild.members.cache.filter(s => s.user.username.includes(ayar.tag) && !s.roles.cache.has(ekipRolu))
     let et = message.guild.members.cache.filter(member => !member.roles.cache.has(ayar.cekilis) || !member.roles.cache.has(ayar.etkinlik)).size;

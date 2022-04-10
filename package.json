@@ -19,6 +19,7 @@
     "discord-reply": "^0.1.2",
     "discord.js": "^12.5.3",
     "express": "^4.17.1",
+    "get-ipinfo": "^1.0.0",
     "moment": "^2.29.1",
     "moment-duration-format": "^2.3.2",
     "mongoose": "^5.11.20",
