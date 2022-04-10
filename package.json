@@ -25,6 +25,7 @@
     "parse-ms": "^2.1.0",
     "string-table": "^0.1.5",
     "table": "^5.4.6",
+    "weather-js": "^2.0.0",
     "weky": "^2.0.7"
   },
   "engines": {
